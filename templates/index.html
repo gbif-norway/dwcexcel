@@ -1,4 +1,5 @@
 <!doctype html>
+<html><head>
 <meta charset='utf-8'>
 <title>DwC Excel Template Generator</title>
 <style>
@@ -33,6 +34,18 @@ document.addEventListener("DOMContentLoaded", function(e) {
   }
 });
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165033400-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-165033400-5');
+</script>
+
+</head><body>
 <aside>
 % for group in config['grouping']:
   % for name in config['terms'][group]:
@@ -102,3 +115,4 @@ document.addEventListener("DOMContentLoaded", function(e) {
 <footer>
 
 </footer>
+</body></html>
